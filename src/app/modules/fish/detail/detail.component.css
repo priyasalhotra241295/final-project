@@ -1,0 +1,11 @@
+.detail img{
+        height: 231px;
+        text-align: center;
+}
+.detail{
+    text-align: center;
+}
+.detail-content{
+padding-left: 10px;
+padding-right: 10px;
+}

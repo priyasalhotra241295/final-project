@@ -1,0 +1,37 @@
+
+<div class="item-list-main">
+   
+    <!-- main item section start -->
+
+    <div class="category-sec" id="itemsection__189543" >
+        <!-- <a routerLink="/listing">Back</a> -->
+        <h2 class="category-title" style="text-align: center;" ><span>{{data?.name}} ({{data?.composition}})</span></h2>
+        <div class="detail">
+            <img src="{{data.picUrl}}">
+            
+        </div>
+        <div class="detail-content">
+            <h3>{{data?.name}} ({{data?.composition}})</h3>
+            <h4>{{data?.category}} 
+                <span *ngIf="data?.gender == 'F'">
+                    (Female)
+                </span>
+                <span *ngIf="data?.gender == 'M'">
+                    (Male)
+                </span>
+            </h4>
+            <div class="d-flex menu-item-price-wrap justify-content-between mt-auto">
+                <div class="foodpric-text order-1">
+                    <span class="foodpric display-block">Color : {{data?.color}}</span>
+                    <span class="foodpric display-block"> {{ data?.price | currency:'CAD':'symbol' }}</span>
+                   
+                </div>
+                <div class="menu-item-btn-wrap order-2 menu-item-btn-error"><span
+                        style="font-size:11px; font-style:italic; color:#4f4f4f;">Size: {{data?.size}}</span></div>
+            </div>
+            <div>
+                {{data?.caption}}
+            </div>
+        </div>
+    </div>
+</div>
